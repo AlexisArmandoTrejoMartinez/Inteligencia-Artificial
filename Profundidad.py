@@ -17,27 +17,7 @@ import json
 with open('base3.json') as file:
 	data = json.load(file)
 camino=[]
-"""
-def busqueda(cuspide,valorbusqueda):
-	camino.append(cuspide)
-	
-	if cuspide == valorbusqueda:
-		return valorbusqueda
-		
-	for k,v in data:
-		if v == cuspide:
-			resultado=busqueda(k,valorbusqueda)
-			if resultado:
-				return resultado
-	camino.pop()
-	return 0
-resultado=busqueda("C:","MemoriaRam.exe")
-if resultado:
-	print ("Archivo encontrado")
-	print(camino)
-else:
-	print("no encontrado")
-"""
+
 def busqueda(cuspide,valorbusqueda):
 	
 	if cuspide == valorbusqueda:
